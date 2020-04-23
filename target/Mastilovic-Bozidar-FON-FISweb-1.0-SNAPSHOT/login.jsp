@@ -7,20 +7,20 @@
     <form action="/homework/app/login" method="POST">
         <div class="form-group">
             <label for="inputEmail">Email address:</label>
-            <input type="email" class="form-control" id="inputEmail" name="email">
+            <input type="email" class="form-control" id="inputEmail" required="required" name="email">
             <p style="color: red;">${emailError}</p>
         </div>
 
         <div class="form-group">
             <label for="inputPassword">Password:</label>
-            <input type="password" class="form-control" id="inputPassword" name="password">
+            <input type="password" class="form-control" id="inputPassword" required="required" name="password">
             <p style="color: red;">${pwError}</p>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>    
-            
+
 <%@include file="/WEB-INF/pages/partials/scripts.jsp"%>    
 <%@include file="/WEB-INF/pages/partials/footer.jsp"%>    
 

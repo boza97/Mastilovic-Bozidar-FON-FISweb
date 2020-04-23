@@ -27,10 +27,7 @@ public class DeleteDepartmentAction extends AbstractAction {
 
     @Override
     public String execute(HttpServletRequest request) {
-        User user = (User) request.getSession(true).getAttribute("user");
-        if (user == null) {
-            return PageConstants.VIEW_LOGIN;
-        }
+
         Long id = Long.parseLong(request.getParameter("departmentId"));
         List<Department> departments = (List<Department>) request.getServletContext().getAttribute("departments");
 

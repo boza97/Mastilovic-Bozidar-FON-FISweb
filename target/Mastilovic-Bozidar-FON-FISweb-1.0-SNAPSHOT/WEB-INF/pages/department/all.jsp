@@ -1,12 +1,9 @@
 <%@page import="mastilovic.bozidar.fon.fisweb.model.Department"%>
 <%@page import="java.util.List"%>
 
-<%@include file="/WEB-INF/pages/partials/directives.jsp" %>
+<%@include file="/WEB-INF/pages/partials/directives.jsp"%>
 
-<%
-    List<Department> departments = (List<Department>) request.getServletContext().getAttribute("departments");
-%>
-
+<c:set var="departments" value="${applicationScope.departments}" />
 <%@include file="/WEB-INF/pages/partials/header.jsp" %>
 
 <div class="pt-5" id="table-departments">
@@ -72,7 +69,7 @@
     </div>
 </div>
 
-<%@include file="/WEB-INF/pages/partials/scripts.jsp" %>
+<%@include file="/WEB-INF/pages/partials/scripts.jsp"%>
 
 <script>
     function onEditDepartment(id, shortName, name) {
@@ -83,4 +80,4 @@
         $('#editDepartmentModal').modal('toggle');
     }
 </script>
-<%@include file="/WEB-INF/pages/partials/footer.jsp" %>
+<%@include file="/WEB-INF/pages/partials/footer.jsp"%>

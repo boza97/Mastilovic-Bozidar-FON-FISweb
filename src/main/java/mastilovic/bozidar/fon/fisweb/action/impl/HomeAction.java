@@ -18,13 +18,8 @@ public class HomeAction extends AbstractAction {
 
     @Override
     public String execute(HttpServletRequest request) {
-        User user = (User) request.getSession(true).getAttribute("user");
 
-        if (user != null) {
-            return PageConstants.VIEW_HOME;
-        }
-
-        return PageConstants.VIEW_LOGIN;
+        return PageConstants.VIEW_HOME;
     }
 
 }

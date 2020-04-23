@@ -28,12 +28,6 @@ public class SaveDepartmentAction extends AbstractAction {
     @Override
     public String execute(HttpServletRequest request) {
 
-        User user = (User) request.getSession(true).getAttribute("user");
-
-        if (user == null) {
-            return PageConstants.VIEW_LOGIN;
-        }
-
         String shortName = request.getParameter("shortName");
         String name = request.getParameter("name");
 

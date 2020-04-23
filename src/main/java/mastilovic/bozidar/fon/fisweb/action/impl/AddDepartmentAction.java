@@ -8,7 +8,6 @@ package mastilovic.bozidar.fon.fisweb.action.impl;
 import javax.servlet.http.HttpServletRequest;
 import mastilovic.bozidar.fon.fisweb.action.AbstractAction;
 import mastilovic.bozidar.fon.fisweb.constants.PageConstants;
-import mastilovic.bozidar.fon.fisweb.model.User;
 
 /**
  *
@@ -18,12 +17,7 @@ public class AddDepartmentAction extends AbstractAction{
 
     @Override
     public String execute(HttpServletRequest request) {
-        User user = (User) request.getSession(true).getAttribute("user");
 
-        if (user == null) {
-            return PageConstants.VIEW_LOGIN;
-        }
-        
         return PageConstants.VIEW_ADD_DEPARTMENT;
     }
     
