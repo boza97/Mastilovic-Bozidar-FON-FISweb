@@ -11,7 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import mastilovic.bozidar.fon.fisweb.action.viewresolver.ViewResolver;
+import mastilovic.bozidar.fon.fisweb.viewresolver.ViewResolver;
 import mastilovic.bozidar.fon.fisweb.controller.ApplicationController;
 
 /**

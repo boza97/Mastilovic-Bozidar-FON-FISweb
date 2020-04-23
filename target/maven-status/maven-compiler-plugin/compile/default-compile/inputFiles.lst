@@ -1,7 +1,6 @@
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\impl\LoginAction.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\service\DepartmentService.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\impl\DeleteDepartmentAction.java
-C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\viewresolver\ViewResolver.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\listener\MyApplicationContextListener.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\impl\LogoutAction.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\factory\ActionFactory.java
@@ -14,6 +13,7 @@ C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\impl\AddDepartmentAction.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\controller\ApplicationController.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\AbstractAction.java
+C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\viewresolver\ViewResolver.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\frontcontroller\FrontController.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\action\impl\SaveDepartmentAction.java
 C:\Users\Milos\Documents\NetBeansProjects\Mastilovic-Bozidar-FON-FISweb\src\main\java\mastilovic\bozidar\fon\fisweb\constants\PageConstants.java
