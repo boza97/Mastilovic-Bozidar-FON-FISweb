@@ -1,26 +1,28 @@
 <%@include  file="/WEB-INF/pages/partials/directives.jsp"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@include  file="/WEB-INF/pages/partials/header.jsp"%>
 
 <div class="pt-5 w-50" id="add-department">
     <h2 class="text-center">Create</h2>
 
-    <form action="${root}/app/department/save" method="POST">
+    <%@include file="/WEB-INF/pages/partials/messages.jsp" %>
+
+    <form:form action="${root}/department/save" method="POST" modelAttribute="departmentDto">
         <div class="form-group">
             <label for="shortName" class="col-form-label">Short name:</label>
-            <input type="text" class="form-control" id="shortName" name="shortName">
-            <p style="color: red;">${shortNameError}</p>
+            <form:input type="text" class="form-control" id="shortName" path="shortName"/>
+            <p style="color: red;"><form:errors path="shortName"/></p>
         </div>
 
         <div class="form-group">
             <label for="departmentName" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="departmentName" name="name"></input>
-            <p style="color: red;">${nameError}</p>
+            <form:input type="text" class="form-control" id="departmentName" path="name"/>
+            <p style="color: red;"><form:errors path="name"/></p>
         </div>
 
         <button type="submit" class="btn btn-primary">Save</button>
-    </form>
+    </form:form>
 </div>
-
 
 <%@include file="/WEB-INF/pages/partials/scripts.jsp"%>
 <%@include file="/WEB-INF/pages/partials/footer.jsp"%>

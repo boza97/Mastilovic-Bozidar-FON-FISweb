@@ -5,12 +5,9 @@
  */
 package mastilovic.bozidar.fon.fisweb.listener;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import mastilovic.bozidar.fon.fisweb.model.User;
 
 /**
  *
@@ -30,9 +27,6 @@ public class MyApplicationContextListener implements ServletContextListener {
         System.out.println("======================================================");
         System.out.println("==============  contextInitialized  =================");
         System.out.println("=======================================================");
-
-        sce.getServletContext().setAttribute("users", createUsers());
-        sce.getServletContext().setAttribute("departments", new ArrayList<>());
     }
 
     @Override
@@ -41,15 +35,4 @@ public class MyApplicationContextListener implements ServletContextListener {
         System.out.println("===============  contextDestroyed  =================");
         System.out.println("=======================================================");
     }
-
-    private List<User> createUsers() {
-        return new ArrayList<User>() {
-            {
-                add(new User("Bozidar", "Mastilovic", "boza@gmail.com", "boza"));
-                add(new User("Petar", "Petrovic", "petar@gmail.com", "petar"));
-                add(new User("Marko", "Markovic", "marko@gmail.com", "marko"));
-            }
-        };
-    }
-
 }

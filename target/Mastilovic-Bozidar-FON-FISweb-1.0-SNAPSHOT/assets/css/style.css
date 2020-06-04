@@ -38,6 +38,14 @@ footer p {
     background-color: #2475B0;
 }
 
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #563939 !important;
+}
+
 #table-departments{
     width: 90%;
     margin: auto !important;
