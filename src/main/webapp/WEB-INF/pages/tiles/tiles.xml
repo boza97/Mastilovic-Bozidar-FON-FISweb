@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="base-definition"
+                template="/WEB-INF/pages/tiles/layout/defaultLayout.jsp">
+        <put-attribute name="title" value=""></put-attribute>
+        <put-attribute name="header"
+                       value="/WEB-INF/pages/tiles/template/defaultHeader.jsp">
+        </put-attribute>
+        <put-attribute name="footer"
+                       value="/WEB-INF/pages/tiles/template/defaultFooter.jsp">
+        </put-attribute>
+        <put-attribute name="body" value=""></put-attribute>
+    </definition>
+    
+    <!--LOGIN-->
+    <definition name="login" extends="base-definition">
+        <put-attribute name="title" value="Login"></put-attribute>
+        <put-attribute name="body"
+                       value="/WEB-INF/pages/login.jsp">
+        </put-attribute>
+    </definition>
+    
+    <!--HOME-->
+    <definition name="home" extends="base-definition">
+        <put-attribute name="title" value="Home"></put-attribute>        
+        <put-attribute name="body"
+                       value="/WEB-INF/pages/home.jsp">
+        </put-attribute>
+    </definition>
+    
+    <!--DEPARTMENT-->
+    <definition name="department/all" extends="base-definition">
+        <put-attribute name="title" value="Department all"></put-attribute>
+        <put-attribute name="body"
+                       value="/WEB-INF/pages/department/all.jsp">
+        </put-attribute>
+    </definition>
+    <definition name="department/add" extends="base-definition">
+        <put-attribute name="title" value="Department Add"></put-attribute>
+        <put-attribute name="body"
+                       value="/WEB-INF/pages/department/add.jsp">
+        </put-attribute>
+    </definition>
+    <definition name="department/edit" extends="base-definition">
+        <put-attribute name="title" value="Department Edit"></put-attribute>
+        <put-attribute name="body"
+                       value="/WEB-INF/pages/department/edit.jsp">
+        </put-attribute>
+    </definition>
+</tiles-definitions>

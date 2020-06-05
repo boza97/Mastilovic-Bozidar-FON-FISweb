@@ -18,7 +18,6 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -86,7 +85,7 @@ public class DepartmentController {
         return "department/edit";
     }
 
-    @PatchMapping(value = "update")
+    @PostMapping(value = "update")
     public String update(@ModelAttribute(name = "departmentDto") @Validated DepartmentDto departmentDto,
             BindingResult result,
             RedirectAttributes redirectAttributes,
@@ -101,9 +100,9 @@ public class DepartmentController {
             return "redirect:/department/" + departmentDto.getId() + "/edit";
         }
     }
-    
+
     @GetMapping(value = "{departmentId}/delete")
-    public String delete(@PathVariable(name = "departmentId") Long departmentId){
+    public String delete(@PathVariable(name = "departmentId") Long departmentId) {
         departmentService.delete(departmentId);
         return "redirect:/department/all";
     }

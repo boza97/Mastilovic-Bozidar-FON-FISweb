@@ -33,9 +33,9 @@ public class ApplicationInitializer implements WebApplicationInitializer {
         webAppContext.register(WebContextConfig.class);
         webAppContext.setServletContext(servletContext);
 
-        FilterRegistration.Dynamic hiddenHttpMethodFilter = servletContext
-                .addFilter("hiddenHttpMethodFilter", new HiddenHttpMethodFilter());
-        hiddenHttpMethodFilter.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
+//        FilterRegistration.Dynamic hiddenHttpMethodFilter = servletContext
+//                .addFilter("hiddenHttpMethodFilter", new HiddenHttpMethodFilter());
+//        hiddenHttpMethodFilter.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
 
         ServletRegistration.Dynamic dispatcherServlet = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(webAppContext));
         dispatcherServlet.addMapping("/");
